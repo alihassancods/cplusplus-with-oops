@@ -42,7 +42,8 @@ Now if we still have low space and we want to store more and more precise value 
 double variable; 
 ```
 Double helps us store more precise value than float, basically its a more precise float.
-
+ 
+The character datatype is used to store the alphabets or special characters. As we know that the RAM stores data in form of numbers so to store basically anything we will store in numbers. In reference to the ASCII Standard, the character have specific values like 'A' has value of 65.
 ## Functions
 
 Function is like a machine which takes some input and gives back some output.
