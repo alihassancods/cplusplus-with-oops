@@ -16,3 +16,36 @@ for (int i=0; i<5; i++){
 ```
 Its just more common to use just < sign with the size of array.
 The for loop is used more with accessing the elements in array, otherwise any kind of loop can be used in this loop.
+The difference between List and Array is that the List in Python was just a hetrogeneous collection of the data.
+
+## 2 Dimensional Arrays
+The 2 dimensional arrays have the multiple rows and we can also say it has columns as well.
+```cpp
+int a[3][3] = {{1,2,3},{1,2,3},{1,2,3}};
+// datatype a[rows][columns] = {elements};
+for (int i=0; i<3; i++){
+   for (int j=0; j<3; j++){
+    cout << a[i][j] << endl;
+    }
+}
+
+```
+The two dimensional arrays or any array size is defined in square brackets which is constant number. 
+The variables inside the square brackets would be like invalid, because the creator of c++ made this like this.
+
+## Character Arrays
+
+The group of characters is called the string. So the array of characters will be called the arrays.
+
+```cpp
+char a[] = "Hello";
+cout << a << endl;
+for (int i=0; i<6; i++){
+    cout << a[i] << endl;
+}
+```
+The cout statement is intelligent enough so that it can easily check for the null character and print the string itself.
+The string ends with \0 which is NULL Character and this isn't displayed anywhere but plays the role in the string ending.
+The Hello will be H,e,l,l,o,\0
+We have a shortcut to avoid writing the char a[] which is a new datatype **string**
+The string is same as the char a[] and we can use the manipulation on it too.
