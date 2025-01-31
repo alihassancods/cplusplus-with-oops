@@ -49,3 +49,8 @@ The string ends with \0 which is NULL Character and this isn't displayed anywher
 The Hello will be H,e,l,l,o,\0
 We have a shortcut to avoid writing the char a[] which is a new datatype **string**
 The string is same as the char a[] and we can use the manipulation on it too.
+
+```cpp
+string a = "Hello";
+cout << a.length() << endl;
+```
