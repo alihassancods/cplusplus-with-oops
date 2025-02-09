@@ -53,4 +53,24 @@ The string is same as the char a[] and we can use the manipulation on it too.
 ```cpp
 string a = "Hello";
 cout << a.length() << endl;
+cout << a.empty() << endl; // this checks that if the string is empty or not?
 ```
+
+## Struct in C++
+When we use the arrays, we must have to store the homogeneous data but for storing the heterogeneous data we use the structures. The **struct** keyword is used when defining a structure. We define the structure of data we want to store inside it and then use it as datatype to define variables.
+
+```cpp
+struct structName{
+    int basicInteger;
+    string varString;
+    float varFloat;
+};
+structName oneStruct;
+structName billionStructs[];
+
+oneStruct.basicInteger = 45;
+oneStruct.varString = "test string";
+oneStruct.varFloat = 4.5;
+```
+
+We use structs to store the heterogeneous data.
