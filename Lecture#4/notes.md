@@ -29,3 +29,35 @@ To avoid difficulty writing the whole pointer word we use asterisk *
 This is now called the Integer Pointer which has name address
 - This must must must contain a address
 - This must must must contain address of datatype integer
+
+If we want to access the value from the address then we use the * operator
+***p** is the follow the pointer which follows the address to get the value
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int array[3] = {1, 2, 3}; // declares array
+
+    int p;                // declares integer pointer
+    p = &array[0];         // assigns address
+    cout << p << endl;     // print address
+    cout << p + 1 << endl; // print address
+
+    cout << p << endl; // accesses value and print value
+```
+If we move the address to the next one,then we can get next value available on that address
+To move address we need to move 4 bytes, but if we do +4 it will not be valid because on other systems the chunks can be of different sizes like 2,4,8 e.t.c
+So language provided us the basic facility to move address by doing +1 which will increase 4 bytes because it was integer pointer
+The type of pointer it is, the number of bytes it will increase
+```cpp
+    cout << (p + 1) << endl; // print value on address next to it
+    cout <<(p + 2) << endl; // print value on address two steps next to it
+    // starting address of an array is equal to the address of the array
+    cout << &array << endl;    // this will give the starting address
+    cout << &array[0] << endl; // this will also give the starting address
+
+}
+```
