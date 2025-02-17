@@ -61,3 +61,18 @@ The type of pointer it is, the number of bytes it will increase
 
 }
 ```
+
+### Null Pointer
+The Null pointer is the one pointer which points to nothing, like the address 0. 
+But when we reach the address zero the OS blocks our program not giving us access towards that memory location because it was being used by the OS to do some other stuff.
+
+```cpp
+int *nullPtr = NULL;
+int x = 45;
+int *normalPtr = &x;
+cout << *normalPtr << endl;
+cout << *nullPtr << endl; // this will give error, segmentation fault
+```
+`*p` means following the pointer, its like going towards a reference. When we go on a reference its existence vanishes as we are standing on that reference so its termed as **de-referencing** and as pointer is deferenced so its called **Pointer Dereferencing**. When we derefence a null pointer its called **NULL Pointer Dereferencing** and it causes and leads to the error.
+
+We set it null in start and after that we assign it some address after some time when we need it. The error happens when we access the value on the null pointer.
